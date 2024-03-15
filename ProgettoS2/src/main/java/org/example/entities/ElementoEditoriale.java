@@ -1,6 +1,6 @@
 package org.example.entities;
 
-import java.time.LocalDate;
+
 import java.util.Random;
 
 public abstract class ElementoEditoriale {

@@ -10,6 +10,7 @@ import org.example.entities.Rivista;
 import java.io.File;
 
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
@@ -108,25 +109,26 @@ public class Application {
             System.err.println("Errore durante la gestione del file: " + e.getMessage());
             e.printStackTrace();
         }
+
+        //RIPESCAGGIO CONTENUTO DAL FILE DI TESTO
+        try {
+            Scanner myReader = new Scanner(file);
+            while (myReader.hasNextLine()) {
+                String data = myReader.nextLine();
+                System.out.println(data);
+            }
+
+
+            myReader.close();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
     }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //METODI
     public static void rimozionePerISBN(List<ElementoEditoriale> archivio, int ISBN) {
         archivio.stream()
-                .map(ElementoEditoriale::getISBN)
+                .map(elementoEditoriale->elementoEditoriale.getISBN())
                 .filter(isbn -> isbn == ISBN)
                 .findFirst()
                 .ifPresent(isbn -> archivio.removeIf(elemento -> elemento.getISBN() == isbn));
@@ -153,3 +155,5 @@ public class Application {
 
 
 }
+
+

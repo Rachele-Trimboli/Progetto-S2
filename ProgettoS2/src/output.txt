@@ -25,3 +25,42 @@ Rivista{periodicità=MENSILE, ISBN=404, titolo='Icon', annoPublicazione=2015, pa
 Rivista{periodicità=MENSILE, ISBN=403, titolo='Grazia', annoPublicazione=2022, pagine=274}
 Rivista{periodicità=SETTIMANALE, ISBN=402, titolo='ESQUIRE Italia', annoPublicazione=2004, pagine=331}
 Rivista{periodicità=SEMESTRALE, ISBN=808, titolo='Time Magazine Europe', annoPublicazione=2024, pagine=95}
+Libro{autore='Siro Giordano', genere='Biography/Autobiography', ISBN=1000, titolo='After Many a Summer Dies the Swan', annoPublicazione=2024, pagine=329}
+Libro{autore='Luna Cont', genere='Metafiction', ISBN=200, titolo='Wildfire at Midnight', annoPublicazione=2015, pagine=135}
+Libro{autore='Emilia De Santis', genere='Speech', ISBN=500, titolo='The Violent Bear It Away', annoPublicazione=2020, pagine=233}
+Libro{autore='Augusto Ricci', genere='Essay', ISBN=400, titolo='Things Fall Apart', annoPublicazione=2004, pagine=149}
+Libro{autore='Alberto Ferretti', genere='Humor', ISBN=371, titolo='Antic Hay', annoPublicazione=2003, pagine=305}
+Libro{autore='Thea Lombardi', genere='Humor', ISBN=375, titolo='Such, Such Were the Joys', annoPublicazione=2000, pagine=229}
+Libro{autore='Mario Rossi', genere='Realistic fiction', ISBN=402, titolo='The Way of All Flesh', annoPublicazione=1980, pagine=281}
+Rivista{periodicità=SEMESTRALE, ISBN=201, titolo='ELLE DECOR Italia', annoPublicazione=2010, pagine=16}
+Rivista{periodicità=SETTIMANALE, ISBN=202, titolo='MARIE CLAIRE Italia', annoPublicazione=2011, pagine=76}
+Rivista{periodicità=MENSILE, ISBN=404, titolo='Icon', annoPublicazione=2015, pagine=394}
+Rivista{periodicità=MENSILE, ISBN=403, titolo='Grazia', annoPublicazione=2022, pagine=257}
+Rivista{periodicità=SETTIMANALE, ISBN=402, titolo='ESQUIRE Italia', annoPublicazione=2004, pagine=151}
+Rivista{periodicità=SEMESTRALE, ISBN=808, titolo='Time Magazine Europe', annoPublicazione=2024, pagine=249}
+Libro{autore='Ippolito Valentini', genere='Realistic fiction', ISBN=1000, titolo='The Road Less Traveled', annoPublicazione=2024, pagine=329}
+Libro{autore='Radio Leone', genere='Mystery', ISBN=200, titolo='Sleep the Brave', annoPublicazione=2015, pagine=326}
+Libro{autore='Vienna Fabbri', genere='Fanfiction', ISBN=500, titolo='I Know Why the Caged Bird Sings', annoPublicazione=2020, pagine=91}
+Libro{autore='Gianriccardo Bianc', genere='Mythopoeia', ISBN=400, titolo='The Skull Beneath the Skin', annoPublicazione=2004, pagine=271}
+Libro{autore='Amedeo Moretti', genere='Tall tale', ISBN=371, titolo='A Glass of Blessings', annoPublicazione=2003, pagine=282}
+Libro{autore='Antimo Martini', genere='Short story', ISBN=375, titolo='I Will Fear No Evil', annoPublicazione=2000, pagine=367}
+Libro{autore='Mario Rossi', genere='Realistic fiction', ISBN=402, titolo='A Time to Kill', annoPublicazione=1980, pagine=249}
+Rivista{periodicità=SEMESTRALE, ISBN=201, titolo='ELLE DECOR Italia', annoPublicazione=2010, pagine=297}
+Rivista{periodicità=SETTIMANALE, ISBN=202, titolo='MARIE CLAIRE Italia', annoPublicazione=2011, pagine=316}
+Rivista{periodicità=MENSILE, ISBN=404, titolo='Icon', annoPublicazione=2015, pagine=91}
+Rivista{periodicità=MENSILE, ISBN=403, titolo='Grazia', annoPublicazione=2022, pagine=219}
+Rivista{periodicità=SETTIMANALE, ISBN=402, titolo='ESQUIRE Italia', annoPublicazione=2004, pagine=249}
+Rivista{periodicità=SEMESTRALE, ISBN=808, titolo='Time Magazine Europe', annoPublicazione=2024, pagine=241}
+Libro{autore='Walter Milani', genere='Fiction in verse', ISBN=1000, titolo='The Moving Finger', annoPublicazione=2024, pagine=232}
+Libro{autore='Violante De luca', genere='Humor', ISBN=200, titolo='The Soldier's Art', annoPublicazione=2015, pagine=126}
+Libro{autore='Gavino Costa', genere='Western', ISBN=500, titolo='His Dark Materials', annoPublicazione=2020, pagine=71}
+Libro{autore='Dr. Rosaria Ferri', genere='Western', ISBN=400, titolo='A Scanner Darkly', annoPublicazione=2004, pagine=128}
+Libro{autore='Piererminio D'angelo', genere='Speech', ISBN=371, titolo='The Mermaids Singing', annoPublicazione=2003, pagine=13}
+Libro{autore='Dott. Sesto Testa', genere='Mystery', ISBN=375, titolo='Down to a Sunless Sea', annoPublicazione=2000, pagine=353}
+Libro{autore='Mario Rossi', genere='Comic/Graphic Novel', ISBN=402, titolo='A Swiftly Tilting Planet', annoPublicazione=1980, pagine=69}
+Rivista{periodicità=SEMESTRALE, ISBN=201, titolo='ELLE DECOR Italia', annoPublicazione=2010, pagine=384}
+Rivista{periodicità=SETTIMANALE, ISBN=202, titolo='MARIE CLAIRE Italia', annoPublicazione=2011, pagine=273}
+Rivista{periodicità=MENSILE, ISBN=404, titolo='Icon', annoPublicazione=2015, pagine=270}
+Rivista{periodicità=MENSILE, ISBN=403, titolo='Grazia', annoPublicazione=2022, pagine=228}
+Rivista{periodicità=SETTIMANALE, ISBN=402, titolo='ESQUIRE Italia', annoPublicazione=2004, pagine=354}
+Rivista{periodicità=SEMESTRALE, ISBN=808, titolo='Time Magazine Europe', annoPublicazione=2024, pagine=183}
