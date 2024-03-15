@@ -99,7 +99,7 @@ public class Application {
             for (int i =0;i<archivio.size();i++){
                 FileUtils.writeStringToFile(file, archivio.get(i) + System.lineSeparator(), StandardCharsets.UTF_8, true);
             }
-            System.out.println("Scritto!");
+
             String contenuto = FileUtils.readFileToString(file, StandardCharsets.UTF_8);
             System.out.println("CONTENUTO FILE");
             System.out.println(contenuto);
@@ -109,7 +109,7 @@ public class Application {
             e.printStackTrace();
         }
     }
-
+    
 
 
 
