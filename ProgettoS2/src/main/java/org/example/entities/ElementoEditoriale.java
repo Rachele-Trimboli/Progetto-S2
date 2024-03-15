@@ -7,10 +7,10 @@ public abstract class ElementoEditoriale {
 
     protected int ISBN;
     protected String titolo;
-    protected LocalDate annoPublicazione;
+    protected int annoPublicazione;
     protected int pagine;
 
-    public ElementoEditoriale(String titolo, LocalDate annoPublicazione, int ISBN){
+    public ElementoEditoriale(String titolo, int annoPublicazione, int ISBN){
         this.ISBN=ISBN;
         this.titolo=titolo;
         this.annoPublicazione=annoPublicazione;
@@ -21,7 +21,7 @@ public abstract class ElementoEditoriale {
         return ISBN;
     }
 
-    public LocalDate getAnnoPublicazione() {
+    public int getAnnoPublicazione() {
         return annoPublicazione;
     }
 

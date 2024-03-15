@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Rivista extends ElementoEditoriale {
 
     private Periodicità periodicità;
-    public Rivista(String titolo, LocalDate annoPublicazione, int ISBN, Periodicità periodicità) {
+    public Rivista(String titolo, int annoPublicazione, int ISBN, Periodicità periodicità) {
         super(titolo, annoPublicazione, ISBN);
         this.periodicità=periodicità;
     }
@@ -15,7 +15,7 @@ public class Rivista extends ElementoEditoriale {
     }
 
     @Override
-    public LocalDate getAnnoPublicazione() {
+    public int getAnnoPublicazione() {
         return super.getAnnoPublicazione();
     }
 

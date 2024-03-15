@@ -9,6 +9,7 @@ import org.example.entities.Rivista;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Application {
 
@@ -18,22 +19,22 @@ public class Application {
         Scanner scanner = new Scanner(System.in);
 
         //CREAZIONE LIBRI
-        Libro l1 = new Libro(faker.book().title(), LocalDate.of(2024, 2, 15 ),1000, faker.book().author(),faker.book().genre());
-        Libro l2 = new Libro(faker.book().title(), LocalDate.of(2015,1,13),200, faker.book().author(),faker.book().genre());
-        Libro l3 = new Libro(faker.book().title(), LocalDate.of(2020,11,1),500, faker.book().author(),faker.book().genre());
-        Libro l4 = new Libro(faker.book().title(), LocalDate.of(2004,5,10),400, faker.book().author(),faker.book().genre());
-        Libro l5 = new Libro(faker.book().title(), LocalDate.of(2003,6,9),371, faker.book().author(),faker.book().genre());
-        Libro l6 = new Libro(faker.book().title(), LocalDate.of(2000,11,14),375, faker.book().author(),faker.book().genre());
-        Libro l7 = new Libro(faker.book().title(), LocalDate.of(1980,3,8),402, faker.book().author(),faker.book().genre());
+        Libro l1 = new Libro(faker.book().title(), 2024,1000, faker.book().author(),faker.book().genre());
+        Libro l2 = new Libro(faker.book().title(), 2015,200, faker.book().author(),faker.book().genre());
+        Libro l3 = new Libro(faker.book().title(), 2020,500, faker.book().author(),faker.book().genre());
+        Libro l4 = new Libro(faker.book().title(), 2004,400, faker.book().author(),faker.book().genre());
+        Libro l5 = new Libro(faker.book().title(), 2003,371, faker.book().author(),faker.book().genre());
+        Libro l6 = new Libro(faker.book().title(), 2000,375, faker.book().author(),faker.book().genre());
+        Libro l7 = new Libro(faker.book().title(), 1980,402, "Mario Rossi",faker.book().genre());
 
         //CREAZIONE RIVISTE
-        Rivista r1 = new Rivista("ELLE DECOR Italia",LocalDate.of(2010, 1, 1),201, Periodicità.SEMESTRALE);
-        Rivista r2 = new Rivista("MARIE CLAIRE Italia",LocalDate.of(2010, 1, 1),202, Periodicità.SETTIMANALE);
-        Rivista r3 = new Rivista("Icon",LocalDate.of(2010, 1, 1),404, Periodicità.MENSILE);
-        Rivista r4 = new Rivista("Grazia",LocalDate.of(2010, 1, 1),403, Periodicità.MENSILE);
-        Rivista r5 = new Rivista("COSMOPOLITAN Italia",LocalDate.of(2010, 1, 1),308, Periodicità.MENSILE);
-        Rivista r6 = new Rivista("ESQUIRE Italia",LocalDate.of(2010, 1, 1),402, Periodicità.SETTIMANALE);
-        Rivista r7 = new Rivista("Time Magazine Europe",LocalDate.of(2010, 1, 1), 808,Periodicità.SEMESTRALE);
+        Rivista r1 = new Rivista("ELLE DECOR Italia",2010,201, Periodicità.SEMESTRALE);
+        Rivista r2 = new Rivista("MARIE CLAIRE Italia",2011,202, Periodicità.SETTIMANALE);
+        Rivista r3 = new Rivista("Icon",2015,404, Periodicità.MENSILE);
+        Rivista r4 = new Rivista("Grazia",2022,403, Periodicità.MENSILE);
+        Rivista r5 = new Rivista("COSMOPOLITAN Italia",2003,308, Periodicità.MENSILE);
+        Rivista r6 = new Rivista("ESQUIRE Italia",2004,402, Periodicità.SETTIMANALE);
+        Rivista r7 = new Rivista("Time Magazine Europe",2024, 808,Periodicità.SEMESTRALE);
 
         //CREAZIONE DI UN ARCHIVIO
         List<ElementoEditoriale> archivio = new ArrayList<>();
@@ -77,12 +78,44 @@ public class Application {
 //        }
 
         rimozionePerISBN(archivio,308);
+        System.out.println(archivio);
+
+        ricercaPerIsbn(archivio, 200);
+
+        ricercaPerAnno(archivio,2000);
+
+        ricercaPerAutore(archivio, "Mario Rossi");
+
 
     }
 
 
     public static void rimozionePerISBN(List<ElementoEditoriale> archivio, int ISBN) {
-        archivio.stream().map(elemento->elemento.getISBN()).forEach((elem)-> System.out.println());
+        archivio.stream()
+                .map(ElementoEditoriale::getISBN)
+                .filter(isbn -> isbn == ISBN)
+                .findFirst()
+                .ifPresent(isbn -> archivio.removeIf(elemento -> elemento.getISBN() == isbn));
     }
+
+    public static void ricercaPerIsbn(List<ElementoEditoriale> archivio, int ISBN) {
+        archivio.stream()
+                .filter(elemento -> elemento.getISBN() == ISBN)
+                .forEach(System.out::println);
+    }
+    public static void ricercaPerAnno(List<ElementoEditoriale> archivio, int anno) {
+        archivio.stream()
+                .filter(elemento -> elemento.getAnnoPublicazione() == anno)
+                .forEach(System.out::println);
+    }
+    public static void ricercaPerAutore(List<ElementoEditoriale> archivio, String autore) {
+        archivio.stream()
+                .filter(elementoEditoriale -> elementoEditoriale instanceof Libro)
+                .map(elemento -> (Libro) elemento)
+                .filter(libro -> libro.getAutore().equals(autore))
+                .forEach(System.out::println);
+    }
+
+ 
 
 }

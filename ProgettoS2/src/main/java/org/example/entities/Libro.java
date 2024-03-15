@@ -10,7 +10,7 @@ public class Libro extends ElementoEditoriale {
 
 
     private String genere;
-    public Libro(String titolo, LocalDate annoPublicazione,int ISBN, String autore, String genere) {
+    public Libro(String titolo, int annoPublicazione,int ISBN, String autore, String genere) {
         super(titolo, annoPublicazione, ISBN);
         this.autore=autore;
         this.genere=genere;
@@ -24,7 +24,7 @@ public class Libro extends ElementoEditoriale {
     }
 
     @Override
-    public LocalDate getAnnoPublicazione() {
+    public int getAnnoPublicazione() {
         return super.getAnnoPublicazione();
     }
 
