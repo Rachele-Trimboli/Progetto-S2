@@ -1,0 +1,27 @@
+[Libro{autore='Ettore Pagano', genere='Fanfiction', ISBN=1000, titolo='A Many-Splendoured Thing', annoPublicazione=2024, pagine=84}, Libro{autore='Germano Piras', genere='Reference book', ISBN=200, titolo='If I Forget Thee Jerusalem', annoPublicazione=2015, pagine=302}, Libro{autore='Rebecca Sorrentino', genere='Science fiction', ISBN=500, titolo='The Green Bay Tree', annoPublicazione=2020, pagine=78}, Libro{autore='Vitalba Caruso', genere='Science fiction', ISBN=400, titolo='Look Homeward, Angel', annoPublicazione=2004, pagine=258}, Libro{autore='Rocco Gentile', genere='Fiction in verse', ISBN=371, titolo='Quo Vadis', annoPublicazione=2003, pagine=171}, Libro{autore='Cosetta D'angelo', genere='Reference book', ISBN=375, titolo='Far From the Madding Crowd', annoPublicazione=2000, pagine=18}, Libro{autore='Mario Rossi', genere='Western', ISBN=402, titolo='The Moving Toyshop', annoPublicazione=1980, pagine=38}, Rivista{periodicità=SEMESTRALE, ISBN=201, titolo='ELLE DECOR Italia', annoPublicazione=2010, pagine=239}, Rivista{periodicità=SETTIMANALE, ISBN=202, titolo='MARIE CLAIRE Italia', annoPublicazione=2011, pagine=142}, Rivista{periodicità=MENSILE, ISBN=404, titolo='Icon', annoPublicazione=2015, pagine=333}, Rivista{periodicità=MENSILE, ISBN=403, titolo='Grazia', annoPublicazione=2022, pagine=372}, Rivista{periodicità=SETTIMANALE, ISBN=402, titolo='ESQUIRE Italia', annoPublicazione=2004, pagine=36}, Rivista{periodicità=SEMESTRALE, ISBN=808, titolo='Time Magazine Europe', annoPublicazione=2024, pagine=142}]
+Libro{autore='Maristella Negri', genere='Narrative nonfiction', ISBN=1000, titolo='Wildfire at Midnight', annoPublicazione=2024, pagine=29}
+Libro{autore='Marco Donati', genere='Western', ISBN=200, titolo='No Longer at Ease', annoPublicazione=2015, pagine=270}
+Libro{autore='Anselmo Esposito', genere='Realistic fiction', ISBN=500, titolo='Endless Night', annoPublicazione=2020, pagine=35}
+Libro{autore='Samuel Benedetti', genere='Fable', ISBN=400, titolo='Consider the Lilies', annoPublicazione=2004, pagine=198}
+Libro{autore='Nicoletta Sartori', genere='Suspense/Thriller', ISBN=371, titolo='No Longer at Ease', annoPublicazione=2003, pagine=157}
+Libro{autore='Ulrico Cont', genere='Suspense/Thriller', ISBN=375, titolo='An Acceptable Time', annoPublicazione=2000, pagine=377}
+Libro{autore='Mario Rossi', genere='Speech', ISBN=402, titolo='Ah, Wilderness!', annoPublicazione=1980, pagine=213}
+Rivista{periodicità=SEMESTRALE, ISBN=201, titolo='ELLE DECOR Italia', annoPublicazione=2010, pagine=21}
+Rivista{periodicità=SETTIMANALE, ISBN=202, titolo='MARIE CLAIRE Italia', annoPublicazione=2011, pagine=186}
+Rivista{periodicità=MENSILE, ISBN=404, titolo='Icon', annoPublicazione=2015, pagine=383}
+Rivista{periodicità=MENSILE, ISBN=403, titolo='Grazia', annoPublicazione=2022, pagine=218}
+Rivista{periodicità=SETTIMANALE, ISBN=402, titolo='ESQUIRE Italia', annoPublicazione=2004, pagine=349}
+Rivista{periodicità=SEMESTRALE, ISBN=808, titolo='Time Magazine Europe', annoPublicazione=2024, pagine=394}
+Libro{autore='Eusebio Bernardi', genere='Fanfiction', ISBN=1000, titolo='Cover Her Face', annoPublicazione=2024, pagine=108}
+Libro{autore='Sig. Lisa Ferrara', genere='Fiction narrative', ISBN=200, titolo='Taming a Sea Horse', annoPublicazione=2015, pagine=200}
+Libro{autore='Vienna Silvestri', genere='Fiction narrative', ISBN=500, titolo='A Darkling Plain', annoPublicazione=2020, pagine=398}
+Libro{autore='Dr. Lidia Riva', genere='Legend', ISBN=400, titolo='Bury My Heart at Wounded Knee', annoPublicazione=2004, pagine=237}
+Libro{autore='Isabel Marini', genere='Western', ISBN=371, titolo='Cabbages and Kings', annoPublicazione=2003, pagine=361}
+Libro{autore='Dott. Piererminio Ferraro', genere='Suspense/Thriller', ISBN=375, titolo='The House of Mirth', annoPublicazione=2000, pagine=33}
+Libro{autore='Mario Rossi', genere='Comic/Graphic Novel', ISBN=402, titolo='Endless Night', annoPublicazione=1980, pagine=181}
+Rivista{periodicità=SEMESTRALE, ISBN=201, titolo='ELLE DECOR Italia', annoPublicazione=2010, pagine=93}
+Rivista{periodicità=SETTIMANALE, ISBN=202, titolo='MARIE CLAIRE Italia', annoPublicazione=2011, pagine=262}
+Rivista{periodicità=MENSILE, ISBN=404, titolo='Icon', annoPublicazione=2015, pagine=86}
+Rivista{periodicità=MENSILE, ISBN=403, titolo='Grazia', annoPublicazione=2022, pagine=274}
+Rivista{periodicità=SETTIMANALE, ISBN=402, titolo='ESQUIRE Italia', annoPublicazione=2004, pagine=331}
+Rivista{periodicità=SEMESTRALE, ISBN=808, titolo='Time Magazine Europe', annoPublicazione=2024, pagine=95}
