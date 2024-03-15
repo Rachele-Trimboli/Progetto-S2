@@ -5,8 +5,8 @@ import java.time.LocalDate;
 public class Rivista extends ElementoEditoriale {
 
     private Periodicità periodicità;
-    public Rivista(String titolo, LocalDate annoPublicazione, Periodicità periodicità) {
-        super(titolo, annoPublicazione);
+    public Rivista(String titolo, LocalDate annoPublicazione, int ISBN, Periodicità periodicità) {
+        super(titolo, annoPublicazione, ISBN);
         this.periodicità=periodicità;
     }
 
@@ -32,5 +32,16 @@ public class Rivista extends ElementoEditoriale {
     @Override
     public int getPagine() {
         return super.getPagine();
+    }
+
+    @Override
+    public String toString() {
+        return "Rivista{" +
+                "periodicità=" + periodicità +
+                ", ISBN=" + ISBN +
+                ", titolo='" + titolo + '\'' +
+                ", annoPublicazione=" + annoPublicazione +
+                ", pagine=" + pagine +
+                '}';
     }
 }

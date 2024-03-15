@@ -4,12 +4,17 @@ import java.time.LocalDate;
 
 public class Libro extends ElementoEditoriale {
 
+
     private String autore;
+
+
+
     private String genere;
-    public Libro(String titolo, LocalDate annoPublicazione, String autore, String genere) {
-        super(titolo, annoPublicazione);
+    public Libro(String titolo, LocalDate annoPublicazione,int ISBN, String autore, String genere) {
+        super(titolo, annoPublicazione, ISBN);
         this.autore=autore;
         this.genere=genere;
+
 
     }
 
@@ -46,6 +51,10 @@ public class Libro extends ElementoEditoriale {
         return "Libro{" +
                 "autore='" + autore + '\'' +
                 ", genere='" + genere + '\'' +
+                ", ISBN=" + ISBN +
+                ", titolo='" + titolo + '\'' +
+                ", annoPublicazione=" + annoPublicazione +
+                ", pagine=" + pagine +
                 '}';
     }
 }

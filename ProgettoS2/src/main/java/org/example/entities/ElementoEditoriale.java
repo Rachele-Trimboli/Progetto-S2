@@ -3,15 +3,15 @@ package org.example.entities;
 import java.time.LocalDate;
 import java.util.Random;
 
-abstract class ElementoEditoriale {
+public abstract class ElementoEditoriale {
 
-    private int ISBN;
-    private String titolo;
-    private LocalDate annoPublicazione;
-    private int pagine;
+    protected int ISBN;
+    protected String titolo;
+    protected LocalDate annoPublicazione;
+    protected int pagine;
 
-    public ElementoEditoriale(String titolo, LocalDate annoPublicazione){
-        this.ISBN=generateIsbn();
+    public ElementoEditoriale(String titolo, LocalDate annoPublicazione, int ISBN){
+        this.ISBN=ISBN;
         this.titolo=titolo;
         this.annoPublicazione=annoPublicazione;
         this.pagine=generatePagine();
@@ -33,11 +33,7 @@ abstract class ElementoEditoriale {
         return pagine;
     }
 
-    public int generateIsbn(){
-        Random random = new Random();
-        return random.nextInt(400,1000);
 
-    }
 
     public int generatePagine(){
         Random random = new Random();
